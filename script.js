@@ -1,118 +1,167 @@
 
 
-let counter =0;
-while(counter<=100){
-    console.log(counter);
-    counter =counter +1
+//! задача - 1 - Declaration
+
+function logToConsole1(num, num2) {
+for(let n = num; n < num2; n++)
+  console.log(n);
 }
 
-zadacha-2
+logToConsole1 (20,50);
 
-let count =0;
-while (count <=20){
-    if (count % 2===0){
-        console.log(count);
-    }
-    count++;
+//! задача - 1 - arrow function
 
+const loge1 =(num, num2) =>{
+for(let n = num; n < num2; n++)
+  console.log(n);
 }
+loge1(10,40)
 
-
-
-let counter = 1;
-let sum = 1;
-
-while (counter <= 0 ) {
-  sum = sum + counter;
-  counter++;
+//! задача - 1 - expression function
+const expression1 = function(num, num2){
+   for(let n = num; n < num2; n++)
+        console.log(n);
 }
-console.log(sum +counter);
+expression1(1,100)
 
+//! задача - 2 - Declaration
 
-zadacha-4
-
-let userName ="Naruto Shipuden  ";
-
-console.log(userName.charAt(0));
-let counter =0;
-while (counter <= userName.length){
-    if(userName.charAt(counter) ==="u"){
-        console.log("the Leter is in "+counter+"index");
-    }
-    counter ++;
-}
-let naruto ="Naruto Shipuden";
-for(let index =naruto.length; index>=0; index--){
-    let char =naruto.charAt(index);
-    if (char ==="u"){
-        console.log(yes! ${char});
-    }else{
-        console.log("No!");
-    }
-}
-
-
-
-
-let user = "peaksoft";
-let coun = user.length;
-
-while (coun >= 0) {
-    console.log(user.charAt(coun));
-    coun--;
-}
-
-segodna
-let number = prompt("введите код");
-for (let kod = 0; kod <= number; kod++){
-    console.log(kod);
-}
-
-
-
-let string = 0;
-let st = ``;
-
-while (string < 6) {
-  let strin = 0;
-  while (strin <= 10) {
-    if (string === 0 || string === 5) {
-      st = st + "*";
-    }  else if (strin === 0 || strin === 10){
-        st = st + "*"
-    }
-
-    else {
-      st = st + "-";
-    }
-
-    strin++;
+function showEvenNumbers2(number, number2) {
+  for(let n = number; n < number2; n++)
+    if (n %2 === 0 )
+    console.log(n);
   }
 
-  st = st + "\n";
-  string++;
+  showEvenNumbers2(5,50)
+
+//! задача - 2 - arrow function
+const arrow2 =(number, number2) =>{
+    for(let n = number; n < number2; n++)
+    if (n %2 === 0 )
+    console.log(n);
+}
+arrow2(20,40)
+
+//! задача - 2 - expression function
+
+const express2 = function(number, number2){
+   for(let n = number; n < number2; n++)
+          if (n %2 === 0 )
+          console.log(n);
+}
+express2(10,80)
+
+//! задача - 3 - Declaration
+function sum(san, san2) {
+  let res = 0;
+
+  for (let a = san; a < san2; a++) {
+    if (a % 2 === 0) {
+      res = res + a;
+    }
+  }
+  return res;
+}
+const result1 = sum(2,40);
+console.log(result1);
+
+//! задача - 3 - arrow function
+const arrow3 = (san, san2) => {
+  let res = 0;
+  for (let a = san; a < san2; a++) {
+    if (a % 2 === 0) {
+      res = res + a;
+    }
+  }
+  return res;
+};
+const result2 = arrow3(5, 50);
+console.log(result2);
+
+//! задача - 3 - expression function
+const expression3 = function (san, san2) {
+  let res = 0;
+  for (let a = san; a < san2; a++) {
+    if (a % 2 === 0) {
+      res = res + a;
+    }
+  }
+  return res;
+};
+const result3 = expression3(4, 80);
+console.log(result3);
+
+// ! задача - 4 - Declaration
+
+function bool(texs, tamga) {
+  for (let index = texs.length - 1; index >= 0; index--) {
+    let char = texs.charAt(index);
+    if (char === tamga) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
 }
 
-console.log(st);
+bool("Nooruz", "u");
 
- 
+// ! задача - 4 - arrow function
+const arrowFun4 = (texs, tamga) => {
+  for (let index = texs.length - 1; index >= 0; index--) {
+    let char = texs.charAt(index);
+    if (char === tamga) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+};
 
-let strogo = 7;
-let strogo2 = "";
-let strogo3 = "#"
+arrowFun4("azamat", "t");
 
-for (let ts = 0; ts < strogo; ts++){
-    strogo2 += strogo3;
-    console.log(strogo2);
+// ! задача - 4 - expression function
+const expressionFun4 = function (texs, tamga) {
+  for (let index = texs.length - 1; index >= 0; index--) {
+    let char = texs.charAt(index);
+    if (char === tamga) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+};
+
+expressionFun4("peaksoft", "s");
+
+// ! задача - 5 - Declaration
+
+function users(word) {
+  let coun = word.length;
+  while (coun >= 0) {
+    console.log(word.charAt(coun));
+    coun--;
+  }
 }
+users("hello");
+users("privet");
 
-let wl = 7;
-let res1 = "";
-let res2 = "#";
-let res3 = 0;
+// ! задача - 5 - arrow function
+const arrowFun5 = (word) => {
+  let coun = word.length;
+  while (coun >= 0) {
+    console.log(word.charAt(coun));
+    coun--;
+  }
+};
+arrowFun5("Azamat");
 
-while (wl >= res3) {
-  res1 += res2;
-  console.log(res1);
-  res3++;
-}
+// ! задача - 5 - expression function
+const expressionFun5 = function (word) {
+  let coun = word.length;
+  while (coun >= 0) {
+    console.log(word.charAt(coun));
+    coun--;
+  }
+};
+expressionFun5("Nooruz");
