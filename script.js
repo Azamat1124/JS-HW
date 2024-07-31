@@ -1,118 +1,95 @@
+// ! задача - 1 даража
+// const nam = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const namber = nam.map((element) => element * 2);
+// console.log(namber);
 
+// ! задача - 1
 
-let counter =0;
-while(counter<=100){
-    console.log(counter);
-    counter =counter +1
-}
+// const nambers = [1, 2, 3, 4, 5];
+// const nam = (element) => {
+//   return element * element;
+// };
+// const mynam = nambers.map(nam);
+// console.log(mynam);
 
-zadacha-2
+// ! задача - 2
+// const userName = [
+//   { forstName: "John", lastName: "Obama", age: 34, gender: "male" },
+//   { forstName: "Ariana", lastName: "Grande", age: 22, gender: "femali" },
+//   { forstName: "Naruto", lastName: "Uzumaki", age: 19, gender: "male" },
+//   { forstName: "Cristiano", lastName: "Ronaldo", age: 38, gender: "male" },
+// ];
+// const myName = userName.map((item) => {
+//   return {
+//     fullName: item.forstName + " " + item.lastName,
+//     age:item.age,
+//     gender:item.gender,
+//   };
+// });
+// console.log(myName);
 
-let count =0;
-while (count <=20){
-    if (count % 2===0){
-        console.log(count);
-    }
-    count++;
+// ! задача - 3
 
-}
+// const words = [1, 2, 3, 4, 5, 4, 8, 34 , 3, 6];
 
+// const filteredWords = words.filter((Element)=>{
+//     if (Element %2===0) {
+//         return Element
+//     }
+// });
+// console.log(filteredWords);
 
+// ! задача - 4
 
-let counter = 1;
-let sum = 1;
+// const users = [
+//   { forstName: "John", lastName: "Obama", age: 34, gender: "male" },
+//   { forstName: "Ariana", lastName: "Grande", age: 22, gender: "femali" },
+//   { forstName: "Naruto", lastName: "Uzumaki", age: 19, gender: "male" },
+//   { forstName: "Cristiano", lastName: "Ronaldo", age: 38, gender: "male" },
+//   { forstName: "Sakura", lastName: "chan", age: 18, gender: "femali" },
+// ];
+// const ser = users.filter ((element) => {
+//     if (element.forstName === "Ariana" || element.forstName === "Sakura") {
+//         return true;
+//     }
+//     return false;
+// })
+// console.log(ser);
 
-while (counter <= 0 ) {
-  sum = sum + counter;
-  counter++;
-}
-console.log(sum +counter);
+// ! задача -5
 
+// const numbers5 = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
 
-zadacha-4
+// const num0 = 0;
+// const num5 = numbers5.reduce((element, summa) => element + summa);
+// console.log(num5);
 
-let userName ="Naruto Shipuden  ";
+// ! задача - 6
 
-console.log(userName.charAt(0));
-let counter =0;
-while (counter <= userName.length){
-    if(userName.charAt(counter) ==="u"){
-        console.log("the Leter is in "+counter+"index");
-    }
-    counter ++;
-}
-let naruto ="Naruto Shipuden";
-for(let index =naruto.length; index>=0; index--){
-    let char =naruto.charAt(index);
-    if (char ==="u"){
-        console.log(yes! ${char});
-    }else{
-        console.log("No!");
-    }
-}
+// let sum = 0;
+// const numbers6 = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
+// numbers6.forEach((element) => {
+//   if (element % 2 === 1) {
+//     sum += element;
+//   }
+// });
+// console.log(sum);
 
-
-
-
-let user = "peaksoft";
-let coun = user.length;
-
-while (coun >= 0) {
-    console.log(user.charAt(coun));
-    coun--;
-}
-
-segodna
-let number = prompt("введите код");
-for (let kod = 0; kod <= number; kod++){
-    console.log(kod);
-}
-
-
-
-let string = 0;
-let st = ``;
-
-while (string < 6) {
-  let strin = 0;
-  while (strin <= 10) {
-    if (string === 0 || string === 5) {
-      st = st + "*";
-    }  else if (strin === 0 || strin === 10){
-        st = st + "*"
-    }
-
-    else {
-      st = st + "-";
-    }
-
-    strin++;
-  }
-
-  st = st + "\n";
-  string++;
-}
-
-console.log(st);
-
+// ! задача - 7
  
+// const user7 = [
+//   { forstName: "John", lastName: "Obama", age: 34, gender: "male" },
+//   { forstName: "Ariana", lastName: "Grande", age: 22, gender: "femali" },
+//   { forstName: "Naruto", lastName: "Uzumaki", age: 19, gender: "male" },
+//   { forstName: "Kakashi", lastName: "Hatake", age: 38, gender: "male" },
+//   { forstName: "Sakura", lastName: "chan", age: 18, gender: "femali" },
+// ]
+// const res = user7.find((element) => element.forstName === "Naruto")
+// console.log(res);
 
-let strogo = 7;
-let strogo2 = "";
-let strogo3 = "#"
+// ! задача - 8
 
-for (let ts = 0; ts < strogo; ts++){
-    strogo2 += strogo3;
-    console.log(strogo2);
-}
+// const numbers8 = [1, 2, 3, 4, 5, 4, 8, 34, 3, 6];
 
-let wl = 7;
-let res1 = "";
-let res2 = "#";
-let res3 = 0;
-
-while (wl >= res3) {
-  res1 += res2;
-  console.log(res1);
-  res3++;
-}
+// const num8 = numbers8.findIndex((element) => element === 34)
+// console.log(num8);
