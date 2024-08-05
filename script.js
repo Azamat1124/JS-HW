@@ -1,118 +1,67 @@
-
-
-let counter =0;
-while(counter<=100){
-    console.log(counter);
-    counter =counter +1
+! zadacha - 1
+function createStudent(firstname, lastName, age, university, faculty, gpa) {
+  return {
+    fullName: firstname + " " + lastName,
+    age,
+    education: {
+      university,
+      faculty,
+      gpa,
+    },
+    say: () => {
+      console.log("Azamat Malikov");
+    },
+  };
 }
+const res = createStudent("azamat", "Malikov", "22", "Ош.Му", "Ф.Ю.К", "95");
+console.log(res);
 
-zadacha-2
+! задача - 2
 
-let count =0;
-while (count <=20){
-    if (count % 2===0){
-        console.log(count);
-    }
-    count++;
+const user = {
+  name: "aza",
+  email: "azamat@gmail.com",
+};
 
-}
-
-
-
-let counter = 1;
-let sum = 1;
-
-while (counter <= 0 ) {
-  sum = sum + counter;
-  counter++;
-}
-console.log(sum +counter);
-
-
-zadacha-4
-
-let userName ="Naruto Shipuden  ";
-
-console.log(userName.charAt(0));
-let counter =0;
-while (counter <= userName.length){
-    if(userName.charAt(counter) ==="u"){
-        console.log("the Leter is in "+counter+"index");
-    }
-    counter ++;
-}
-let naruto ="Naruto Shipuden";
-for(let index =naruto.length; index>=0; index--){
-    let char =naruto.charAt(index);
-    if (char ==="u"){
-        console.log(yes! ${char});
-    }else{
-        console.log("No!");
-    }
-}
-
-
-
-
-let user = "peaksoft";
-let coun = user.length;
-
-while (coun >= 0) {
-    console.log(user.charAt(coun));
-    coun--;
-}
-
-segodna
-let number = prompt("введите код");
-for (let kod = 0; kod <= number; kod++){
-    console.log(kod);
-}
-
-
-
-let string = 0;
-let st = ``;
-
-while (string < 6) {
-  let strin = 0;
-  while (strin <= 10) {
-    if (string === 0 || string === 5) {
-      st = st + "*";
-    }  else if (strin === 0 || strin === 10){
-        st = st + "*"
-    }
-
-    else {
-      st = st + "-";
-    }
-
-    strin++;
+function keys(object, key) {
+  if (key in object) {
+    delete object[keys];
+    return object;
+  } else {
+    console.log(`Ключ ${key} отсутсвует`);
   }
-
-  st = st + "\n";
-  string++;
 }
+const objects = keys(user, "passsword");
 
-console.log(st);
+console.log(objects);
 
- 
+! задача - 3
 
-let strogo = 7;
-let strogo2 = "";
-let strogo3 = "#"
+const use = {
+  name: "aza",
+  email: "aza.malik01",
+  age: "22",
+  password: "011124",
+};
 
-for (let ts = 0; ts < strogo; ts++){
-    strogo2 += strogo3;
-    console.log(strogo2);
-}
+let sum = 5;
 
-let wl = 7;
-let res1 = "";
-let res2 = "#";
-let res3 = 0;
+let userEmail = prompt("Введите ваш email:");
 
-while (wl >= res3) {
-  res1 += res2;
-  console.log(res1);
-  res3++;
-}
+if (userEmail !== use.email) {
+  alert("Извините, такого email нету");
+} else {
+  let userPassword = prompt("Введите ваш пароль:");
+
+  if (userPassword !== use.password) {
+    alert("Неверный пароль");
+  } 
+    let userAnswer = prompt("2 + 3 = ?");
+
+    if (parseInt(userAnswer) === sum) {
+      use.sum = 5;
+      alert(`Верно! Ваша премия = ${use.sum}`);
+    } else {
+      alert("Неправильный ответ");
+    }
+  }
