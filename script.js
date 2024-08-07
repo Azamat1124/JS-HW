@@ -1,67 +1,74 @@
-! zadacha - 1
-function createStudent(firstname, lastName, age, university, faculty, gpa) {
-  return {
-    fullName: firstname + " " + lastName,
-    age,
-    education: {
-      university,
-      faculty,
-      gpa,
-    },
-    say: () => {
-      console.log("Azamat Malikov");
-    },
-  };
-}
-const res = createStudent("azamat", "Malikov", "22", "Ош.Му", "Ф.Ю.К", "95");
-console.log(res);
+// ! задача - 1
+// const posts = {
+//   name: "posts",
+//   isloading: true,
+//   byId: {
+//     post1: {
+//       id: "post1",
+//       author: "user1",
+//       body: "......",
+//       comments: ["comment1", "comment2"],
+//     },
+//     post2: {
+//       id: "post2",
+//       author: "user2",
+//       body: "......",
+//       comments: ["comment3", "comment4", "comment5"],
+//     },
+//   },
+//   allids: ["post1", "post2"],
+// };
+// const copyOFPosts = { ...posts };
+// console.log(copyOFPosts);
 
-! задача - 2
+// ! задача -2
 
-const user = {
-  name: "aza",
-  email: "azamat@gmail.com",
-};
+// const posts2 = {
+//     name: "posts",
+//     isloading: true,
+//     byId: {
+//       post1: {
+//         id: "post1",
+//         author: "user1",
+//         body: "......",
+//         comments: ["comment1", "comment2"],
+//       },
+//       post2: {
+//         id: "post2",
+//         author: "user2",
+//         body: "......",
+//         comments: ["comment3", "comment4", "comment5"],
+//       },
+//     },
+//     allids: ["post1", "post2"],
+//   };
+//   const copyOFPosts2 = JSON.parse(JSON.stringify(posts2));
+//   console.log(copyOFPosts2);
+// ? экинчи туру вопросуна тушунбодум
+//   const copy = {...posts2};
+//   console.log(copy);
 
-function keys(object, key) {
-  if (key in object) {
-    delete object[keys];
-    return object;
-  } else {
-    console.log(`Ключ ${key} отсутсвует`);
-  }
-}
-const objects = keys(user, "passsword");
+//! задача - 3
+// const post3 = {
+//   name: "posts",
+//   isloading: true,
+//   id: "post1",
+//   author: "user1",
+//   body: "......",
+//   comments: ["comment1", "comment2"],
+// };
+// const { comments: color, hello, ...rest } = post3;
+//! console.log(color); color бизде (Array) дын ичиндегилерге барабар себеби биз
+//! жаны переменныйды ачканда ошого post3 тун ичиндеги comments ключун
+//! чакырып алганыбызгы байланыштуу color ошого барабар болуп калды
 
-console.log(objects);
+//? console.log(hello); hello бизде undefined га барабар себеп hello post3 ичиндеги бир да ключко туура келбейт
 
-! задача - 3
+//* console.log(rest); rest бизде post3 ко барабар себеби rest бул 3 ... точка оператору бул аягына
+// *жазылганына байланыштуу post3 Object ти кочуруп келет
 
-const use = {
-  name: "aza",
-  email: "aza.malik01",
-  age: "22",
-  password: "011124",
-};
-
-let sum = 5;
-
-let userEmail = prompt("Введите ваш email:");
-
-if (userEmail !== use.email) {
-  alert("Извините, такого email нету");
-} else {
-  let userPassword = prompt("Введите ваш пароль:");
-
-  if (userPassword !== use.password) {
-    alert("Неверный пароль");
-  } 
-    let userAnswer = prompt("2 + 3 = ?");
-
-    if (parseInt(userAnswer) === sum) {
-      use.sum = 5;
-      alert(`Верно! Ваша премия = ${use.sum}`);
-    } else {
-      alert("Неправильный ответ");
-    }
-  }
+// ! задача -4
+const comments = ["comments3", "comments4", "comments5", "comments1"];
+const [comment1, ...rest] = comments;
+// ! console.log(comment1); бул бизде comments3 ко барабар себеби алдынан чыккан биринчи элементти гана окуйт
+// console.log(rest);
