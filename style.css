@@ -1,110 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+#divgreen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+  
+  }
+  
+    
+  
+
 body{
-    display: flex;
-    justify-content:center;
-    margin-top: 20px;
-    background-color: aqua;
+    background-image: url("https://twam.ru/wp-content/uploads/2024/02/zakat-na-more-33.webp");
+height: 100vh;
 }
-h1{
-    color: blue;
-}
-#main{
-    width: 650px;
-    height: fit-content;
-    min-height: 400px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-   border-radius: 30px;
-   border:5px solid black;
-}
-#input{
-    width: 250px;
-    height: 30px;
-    border: 2px solid blue;
-    margin-top: 30px;
-    outline: none;
-}
-#button{
-    width: 80px;
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    background-color: blueviolet;
-    color: aliceblue;
-    font-size: 15px;
-    margin-top: 30px;
-   cursor: pointer;
-}
-#button:hover{
-    background-color: chartreuse;
-    color: black;
-}
-.li{
+#todo-list{
+    background-color:rgba(240, 248, 255, 0.23);
     width: 400px;
-    height: 35px;
-    background-color:dodgerblue;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 5px;
-    color: aliceblue;
-    
-}
-.button22{
-    width: 60px;
-    height: 25px;
-    border-radius: 15px;
-    border: none;
-    background-color: crimson;
-    color: #fff;
-    cursor: pointer;
-    
-}
-.button22:hover{
-    background-color: gold;
-    color: black;
+    height: 200px;
+    border-radius: 85px;
+    margin-top: 140px;
+    margin-left: 70px;
 }
 
-#ulid{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+
+#minute{
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: blue;
+margin-left: 100px;
+margin-top: 40px;
+
 }
-#divclass{
-    width: 300px;
-    display: none;
-    height: 110px;
-    background-color: coral;
-    border-radius: 30px;
-    position: absolute;
-    top: 40%;
-    z-index: 1;
+
+#seconds{
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: blue;
+    margin-left: 45px;
 }
-h1{
+label{
     font-size: 20px;
-text-align: center;
-color: #fff;
-padding-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
-#button5{
-    width: 60px;
-    height: 25px;
-    border-radius: 15px;
+#div-shot{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+}
+#section-todo{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 25px;
+}
+
+#button-start{
+    width: 55px;
+    height: 30px;
     border: none;
-    font-weight: bold;
-    margin-left: 120px;
-    margin-top: 25px;
+    background-color: forestgreen;
+    border-radius: 20px;
+    color: aliceblue;
+    cursor: pointer;
 }
-#button5:hover{
-    background-color: gold;
-    color: #fff;
+#button-start:hover{
+    background-color: rgb(204, 7, 7);
+    color: rgb(13, 13, 13);
+}
+
+#button-stop{
+    width: 55px;
+    height: 30px;
+    border: none;
+    background-color: rgb(161, 9, 9);
+    border-radius: 20px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#button-stop:hover{
+    background-color: rgb(12, 162, 24);
+    color: rgb(8, 8, 7);
+}
+
+#button-reset{
+    width: 55px;
+    height: 30px;
+    border: none;
+    background-color: rgb(0, 0, 255);
+    border-radius: 20px;
+color: aliceblue;
+cursor: pointer;
+}
+#button-reset:hover{
+    background-color: rgb(204, 7, 7);
+    color: rgb(13, 13, 13);
+}
+
+#taim{
+    text-align: center;
+    padding-top: 35px;
+    font-weight: bold;
 }
